@@ -12,7 +12,7 @@ Open inference data is designed to be stored in a data lake or data warehouse.
 
 ## Model Types / Use-Cases
 
-Open Inference is designed to capture
+Open Inference is designed to capture records for a variety of model types and use-cases. The following is a list of model types and use-cases that Open Inference is designed to capture.
 
 Natural Language Processing
 
