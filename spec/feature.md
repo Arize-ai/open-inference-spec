@@ -28,9 +28,11 @@ If the column name is only prefixed with the **category** `:feature:` and a **da
     <tr>
     <td>45</td>
     <td>Bank of America</td>
-    <td>700</td>
+    <td>null</td>
  </body>
 </table>
+
+Note that the `:feature:int:fico_score` column has a value of `null`. This is because the user did not provide their FICO score. This is a valid value for a single value feature column.
 
 ## Embedding Features
 
