@@ -34,7 +34,7 @@ If the column name is only prefixed with `:feature:`, then it is assumed that th
 
 ## Embedding Features
 
-If the column name is prefixed with `:feature:emb:`, then it is assumed that the column is associated with an embedding. An embedding is made up of a vector and a set of associated data. Aan embedding is composed of multiple columns. For this reason, a human friendly name follows the prefix to group the columns together (e.x. `:feature:emb:prompt`) The following is an example of an embedding:
+If the column name is prefixed with `:feature:emb:`, then it is assumed that the column is associated with an embedding. An embedding is made up of a vector and a set of associated data. An embedding is composed of multiple columns. For this reason, a human friendly name follows the prefix to group the columns together (e.x. `:feature:emb:prompt`) The following is an example of an embedding:
 
 -   `:feature:emb:<name>:vector:`: the vector of the embedding. This is a numeric array.
 -   `:feature:emb:<name>:text:`: the associated text data of the embedding if the embedding represents. This is a string.
