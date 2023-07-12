@@ -1,6 +1,6 @@
 # Open Inference
 
-The Open Inference specification is edited in markdown files found in the `spec`,
+The Open Inference specification is edited in markdown files found in the `spec`
 
 ## Overview
 
@@ -16,22 +16,25 @@ Open Inference is designed to capture records for a variety of model types and u
 
 Natural Language Processing
 
-    -   Text Generative - Prompt and Response
-    -   Text Classification
-    -   NER Span Categorization
+-   Text Classification
+-   NER Span Categorization
 
-Tabular:
+Tabular
 
-    -   Regression
-    -   Classification
-    -   Classification + Score
-    -   Multi-Classification
-    -   Ranking
-    -   Multi-Output/Label
-    -   Time Series Forecasting
+-   Regression
+-   Classification
+-   Classification + Score
+-   Multi-Classification
+-   Ranking
+-   Multi-Output/Label
+-   Time Series Forecasting
 
 Computer Vision
 
-    -   Classification
-    -   Bounding Box
-    -   Segmentation
+-   Classification
+-   Bounding Box
+-   Segmentation
+
+Large Language Models
+
+-   Text Generation via Prompt Response
