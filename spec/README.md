@@ -1,8 +1,8 @@
 # OpenInference Specification
 
 -   [Overview](./overview.md)
--   Dimensions
-    -   [Features](./feature.md)
+-   Dimension Columns
+    -   [Feature](./feature.md)
 
 ## Notation Conventions and Compliance
 
