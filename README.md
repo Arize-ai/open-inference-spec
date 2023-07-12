@@ -8,7 +8,16 @@ This is a a working draft of the specification for Open Inference, a specificati
 
 Open Inference defines a set of columns that capture production inference logs that can be used on top of many file formats including Parquet, Avro, CSV, and JSON. It will also support future formats such as Lance.
 
-Open inference data is designed to be stored in a data lake or data warehouse.
+Open inference data is designed to be stored in a data lake or data warehouse and to be downloaded to a local machine for analysis.
+
+```mermaid
+flowchart TD
+    A[ML Infra] -->|OpenInference| B[Inference Store]
+    A -->|OpenInference| C[File System]
+    E[Browser] --> |OpenInference| B[Inference Store]
+    C -->|Import| B
+    B -->|Export| D[Notebook]
+```
 
 ## Model Types / Use-Cases
 
