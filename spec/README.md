@@ -4,6 +4,7 @@
 -   Dimension Columns
     -   [Feature](./feature.md)
     -   [Tag](./tag.md)
+    -   [Prediction](./prediction.md)
 
 ## Notation Conventions and Compliance
 
