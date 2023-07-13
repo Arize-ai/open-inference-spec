@@ -2,9 +2,9 @@
 
 A feature is a column that captures the inputs to the model. Features are typically numeric or categorical values that are used to make the prediction but can extend more complex data types such as embeddings as well. For example, a feature could be the age of a user or their FICO score. Feature columns are prefixed with the category `:feature:` in the column name.
 
-## Numeric and Categorical Features
+## Single Value Features
 
-If the column name is only prefixed with the **category** `:feature:` and a **data_type**, then it is assumed that the column is a numeric or categorical single value column (e.g. a key-value pair). Here is and example of a set of feature columns:
+If the column name is only prefixed with the **category** `:feature:` and a **data_type**, then it is assumed that the column is a single value column (e.g. a key-value pair). Here is and example of a set of feature columns:
 
 <table>
  <thead>
@@ -12,24 +12,28 @@ If the column name is only prefixed with the **category** `:feature:` and a **da
      <th>:feature:int:age</th>
      <th>:feature:str:bank</th>
      <th>:feature:int:fico_score</th>
+     <th>:feature:bool:is_gold_member</th>
     </tr>
  </thead>
- <body>
+ <tbody>
  <tr>
     <td>25</td>
     <td>Chase</td>
     <td>750</td>
+    <td>true</td>
     </tr>
     <tr>
     <td>35</td>
     <td>Wells Fargo</td>
     <td>800</td>
+    <td>false</td>
     </tr>
     <tr>
     <td>45</td>
     <td>Bank of America</td>
     <td>null</td>
- </body>
+    <td>false</td>
+ </tbody>
 </table>
 
 Note that the `:feature:int:fico_score` column has a value of `null`. This is because the user did not provide their FICO score. This is a valid value for a single value feature column.

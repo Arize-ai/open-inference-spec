@@ -3,6 +3,7 @@
 -   [Overview](./overview.md)
 -   Dimension Columns
     -   [Feature](./feature.md)
+    -   [Tag](./tag.md)
 
 ## Notation Conventions and Compliance
 
