@@ -23,4 +23,4 @@ jobs:
               with:
                   path-to-signatures: "signatures/version1/cla.json"
                   path-to-document: "https://github.com/Arize-ai/open-inference-spec/blob/main/CLA.md"
-                  branch: "main"
+                  branch: "cla"
