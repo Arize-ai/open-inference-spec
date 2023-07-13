@@ -1,3 +1,28 @@
 {
-   "signedContributors": []
+  "signedContributors": [
+    {
+      "name": "mikeldking",
+      "id": 5640648,
+      "comment_id": 1633478795,
+      "created_at": "2023-07-13T03:04:40Z",
+      "repoId": 665280158,
+      "pullRequestNo": 12
+    },
+    {
+      "name": "mikeldking",
+      "id": 5640648,
+      "comment_id": 1633480033,
+      "created_at": "2023-07-13T03:06:45Z",
+      "repoId": 665280158,
+      "pullRequestNo": 12
+    },
+    {
+      "name": "mikeldking",
+      "id": 5640648,
+      "comment_id": 1633483261,
+      "created_at": "2023-07-13T03:12:07Z",
+      "repoId": 665280158,
+      "pullRequestNo": 12
+    }
+  ]
 }
