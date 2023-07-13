@@ -1,14 +1,14 @@
-# Open Inference
+# OpenInference
 
-The Open Inference specification is edited in markdown files found in the [spec directory](./spec/README.md)
+The OpenInference specification is edited in markdown files found in the [spec directory](./spec/README.md)
 
 ## Overview
 
-This is a a working draft of the specification for Open Inference, a specification for capturing and storing AI model inferences. It's designed to provide an open, interoperable data specification that is designed for ML systems such as inference servers and ML Observability platforms can use to interface with each other. The specification is transport and file format agnostic, and is intended to be used in conjunction with other specifications such as [Parquet](https://github.com/apache/parquet-format)
+This is a a working draft of the specification for OpenInference, a specification for capturing and storing AI model inferences. It's designed to provide an open, interoperable data specification that is designed for ML systems such as inference servers and ML Observability platforms can use to interface with each other. The specification is transport and file format agnostic, and is intended to be used in conjunction with other specifications such as [Parquet](https://github.com/apache/parquet-format)
 
-Open Inference defines a set of columns that capture production inference logs that can be used on top of many file formats including Parquet, Avro, CSV, and JSON. It will also support future formats such as Lance.
+OpenInference defines a set of columns that capture production inference logs that can be used on top of many file formats including Parquet, Avro, CSV, and JSON. It will also support future formats such as Lance.
 
-Open inference data is designed to be stored in a data lake or data warehouse and to be downloaded to a local machine for analysis.
+OpenInference data is designed to be stored in a data lake or data warehouse and to be downloaded to a local machine for analysis.
 
 ```mermaid
 flowchart TD
@@ -21,7 +21,7 @@ flowchart TD
 
 ## Model Types / Use-Cases
 
-Open Inference is designed to capture records for a variety of model types and use-cases. The following is a list of model types and use-cases that Open Inference is designed to capture.
+OpenInference is designed to capture records for a variety of model types and use-cases. The following is a list of model types and use-cases that OpenInference is designed to capture.
 
 Natural Language Processing
 
