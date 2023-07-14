@@ -4,15 +4,15 @@ A feature is a column that captures the inputs to the model. Features are typica
 
 ## Single Value Features
 
-If the column name is only prefixed with the **category** `:feature:` and a **data_type**, then it is assumed that the column is a single value column (e.g. a key-value pair). Here is and example of a set of feature columns:
+If the column name is only prefixed with the **category** `:feature:` and a **data_type** with a unique **name**, then it is assumed that the column is a single value column (e.g. a key-value pair). Here is and example of a set of feature columns:
 
 <table>
  <thead>
     <tr>
-     <th>:feature:int:age</th>
-     <th>:feature:str:bank</th>
-     <th>:feature:int:fico_score</th>
-     <th>:feature:bool:is_gold_member</th>
+     <th>:feature.int:age</th>
+     <th>:feature.str:bank</th>
+     <th>:feature.int:fico_score</th>
+     <th>:feature.bool:is_gold_member</th>
     </tr>
  </thead>
  <tbody>
@@ -36,37 +36,37 @@ If the column name is only prefixed with the **category** `:feature:` and a **da
  </tbody>
 </table>
 
-Note that the `:feature:int:fico_score` column has a value of `null`. This is because the user did not provide their FICO score. This is a valid value for a single value feature column.
+Note that the `:feature.int:fico_score` column has a value of `null`. This is because the user did not provide their FICO score. This is a valid value for a single value feature column.
 
 ## Embedding Features
 
-If the column name is prefixed with `:feature:emb:`, then it is assumed that the column is associated with an embedding. An embedding is made up of a vector and a set of associated data. An embedding is composed of multiple columns. For this reason, a name follows the prefix parts to group the columns together (e.x. `:feature:emb:vector:prompt`) The following is an example of an embedding:
-
--   `:feature:emb:vector:<name>`: the vector of the embedding. This is a numeric array.
--   `:feature:emb:text:<name>`: the associated text data of the embedding if the embedding represents. This is a string.
--   `:feature:emb:url:<name>`: A URL that points to the raw data of the embedding. This is a string but is a URL to a file (e.x. an image or audio file).
+If a set of columns are meant to be grouped into a "composite", they MUST have matching names. For example, if there is a column named `:feature.vector:prompt` and `feature.text:prompt, then these two columns are meant to be grouped. It is this mechanism that can be used to associate data to a embedding vector.
 
 Here is an example of an embedding for a prompt:
 
 <table>
  <thead>
     <tr>
-     <th>:feature:emb:vector:prompt</th>
-     <th>:feature:emb:text:prompt</th>
+     <th>:feature.vector:prompt</th>
+     <th>:feature.text:prompt</th>
+     <th>:prediction.text:response</th>
     </tr>
  </thead>
  <tbody>
  <tr>
     <td>[0.1, 0.2, 0.3]</td>
     <td>What is the weather like today?</td>
+    <td>It is rainy</td>
     </tr>
     <tr>
     <td>[0.4, 0.5, 0.6]</td>
     <td>What is the weather like tomorrow?</td>
+    <td>It is sunny</td>
     </tr>
     <tr>
     <td>[0.7, 0.8, 0.9]</td>
     <td>What is the weather like in 5 days?</td>
+    <td>It is cloudy</td>
  </tbody>
  <table>
 
@@ -75,8 +75,8 @@ Here is an example of an embedding for an image:
 <table>
     <thead>
         <tr>
-        <th>:feature:emb:vector:my_image</th>
-        <th>:feature:emb:url:my_image</th>
+        <th>:feature.vector:my_image</th>
+        <th>:feature.url:my_image</th>
         </tr>
     </thead>
     <tbody>
