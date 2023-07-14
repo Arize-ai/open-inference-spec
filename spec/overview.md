@@ -17,7 +17,7 @@ In the specification, `category`, `data_type`, and `identifier` will be referred
 Between the `:`s, the **parts** are separated by a `.`. The following is an example of a column name:
 
 ```
-:feature:int:age
+:feature.int:age
 ```
 
 ## Categories
