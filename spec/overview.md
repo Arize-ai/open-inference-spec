@@ -44,7 +44,12 @@ For full details on each of the columns, consult the sub-sections below.
 
 ## Columns
 
+-   [id](./id.md)
+-   [timestamp](./timestamp.md)
 -   [features](./feature.md)
+-   [predictions](./prediction.md)
+-   [actuals](./actual.md)
+-   [tags](./tag.md)
 
 ## Data Types
 
