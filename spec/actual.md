@@ -14,8 +14,8 @@ Here is an example of a set of actual columns:
 <table>
  <thead>
     <tr>
-     <th>:actual.float.score</th>
-     <th>:actual.str.label</th>
+     <th>:actual.float.score:confidence</th>
+     <th>:actual.str.label:animal_type</th>
     </tr>
  </thead>
  <tbody>
