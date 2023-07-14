@@ -1,6 +1,6 @@
 # Actual
 
-an actual is a column that captures the ground truth or actual value of the prediction. this is used to evaluate the model's performance. Since the actual is typically not known at inference time, this is typically added to the records at a later time. Actual columns are prefixed with the category `:actual:` in the column name and typically is symmetric with the [prediction](prediction.md) columns. For example, if there is a `:prediction:float:score` column, then there can be a corresponding `:actual:float:score` column.
+an actual is a column that captures the ground truth or actual value of the prediction. this is used to evaluate the model's performance. Since the actual is typically not known at inference time, this is typically added to the records at a later time. Actual columns are prefixed with the category `:actual:` in the column name and typically is symmetric with the [prediction](prediction.md) columns. For example, if there is a `:prediction:float:score` column, then there can be a corresponding `:actual.float.score:` column.
 
 Similar to [predictions](./prediction.md), there a few reserved **specifiers**.
 
@@ -14,8 +14,8 @@ Here is an example of a set of actual columns:
 <table>
  <thead>
     <tr>
-     <th>:actual:float:score</th>
-     <th>:actual:str:label</th>
+     <th>:actual.float.score</th>
+     <th>:actual.str.label</th>
     </tr>
  </thead>
  <tbody>

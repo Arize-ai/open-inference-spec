@@ -14,8 +14,8 @@ Here is an example of a set of prediction columns:
 <table>
  <thead>
     <tr>
-     <th>:prediction:float:score</th>
-     <th>:prediction:str:label</th>
+     <th>:prediction.float.score:confidence</th>
+     <th>:prediction:str.label:predicted_animal</th>
     </tr>
  </thead>
  <tbody>
@@ -40,7 +40,7 @@ In some cases (e.g. LLMs, NLP), the prediction is a sentence or paragraph. In th
 <table>
  <thead>
     <tr>
-     <th>:prediction:text:response</th>
+     <th>:prediction.text:response</th>
     </tr>
  </thead>
  <tbody>
@@ -57,13 +57,13 @@ In some cases (e.g. LLMs, NLP), the prediction is a sentence or paragraph. In th
 
 ## Embedding Predictions
 
-In some cases (e.g. LLMs, NLP), the prediction can be encoded as an embedding. In this case, the prediction is prefixed with `:prediction:emb:`. An embedding is composed of multiple columns. For this reason, a name follows the prefix parts to group the columns together (e.x. `:prediction:emb:vector:response`) The following is an example of a set of embedding predictions:
+In some cases (e.g. LLMs, NLP), the prediction can be encoded as an embedding. The following is an example of a set of embedding predictions:
 
 <table>
     <thead>
         <tr>
-        <th>:prediction:emb:vector:response</th>
-        <th>:prediction:emb:text:response</th>
+        <th>:prediction.vector:response</th>
+        <th>:prediction.text:response</th>
         </tr>
     </thead>
     <tbody>
@@ -81,14 +81,14 @@ In some cases (e.g. LLMs, NLP), the prediction can be encoded as an embedding. I
     </tbody>
 </table>
 
-Embedding predictions can also be associated with a URL to the raw data of the embedding. This is a string but is a URL to a file (e.x. an image or audio file). In this case, the prediction is prefixed with `:prediction:emb:url:`. Here is an example of a set of embedding predictions with a URL:
+Embedding predictions can also be associated with a URL to the raw data of the embedding. This is a string but is a URL to a file (e.x. an image or audio file). In this case, the prediction is prefixed with `:prediction.url:`. Here is an example of a set of embedding predictions with a URL:
 
 <table>
     <thead>
         <tr>
-        <th>:prediction:emb:vector:response</th>
-        <th>:prediction:emb:text:response</th>
-        <th>:prediction:emb:url:response</th>
+        <th>:prediction.vector:response</th>
+        <th>:prediction.text:response</th>
+        <th>:prediction.url:response</th>
         </tr>
     </thead>
     <tbody>

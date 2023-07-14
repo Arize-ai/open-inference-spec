@@ -5,9 +5,9 @@ A tag is a column that captures metadata about a inference. Tags can be used for
 <table>
  <thead>
     <tr>
-     <th>:tag:str:ethnicity</th>
-     <th>:tag:bool:is_beta_user</th>
-     <th>:tag:float:income_score</th>
+     <th>:tag.str:ethnicity</th>
+     <th>:tag.bool:is_beta_user</th>
+     <th>:tag.float:income_score</th>
     </tr>
  </thead>
  <tbody>

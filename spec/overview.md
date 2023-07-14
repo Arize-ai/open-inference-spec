@@ -4,15 +4,21 @@ The OpenInference specification defines a set of columns that semantically map t
 
 # Naming Convention
 
-The column names in OpenInference encode semantics via a well-formed prefix, where `:`s are used to demarcate machine parsable information. Parsers of the OpenInference specification should use the `:` as a delimiter to extract the ontological information about the column. The anatomy of a column name is as follows:
+The column names in OpenInference encode semantics via a well-formed prefix, where aset of `:`s are used to encapsulate machine parsable information. Parsers of the OpenInference specification should use the `:` as a delimiter to extract the ontological information about the column. The anatomy of a column name is as follows:
 
 ```
-:<category>:<data_type>:<[identifier]>:<name>
+:<category>.<data_type>.<[identifier]>:<name>
 ```
 
 Where `category` MUST be provided. The `data_type` and `identifier` MUST be provided depending on the `category`. The `name` is optional ONLY if the `category` is a reserved singleton category for the row (e.g. `:id:`).
 
 In the specification, `category`, `data_type`, and `identifier` will be referred to as **parts**.
+
+Between the `:`s, the **parts** are separated by a `.`. The following is an example of a column name:
+
+```
+:feature:int:age
+```
 
 ## Categories
 
@@ -28,7 +34,7 @@ A single row or inference record is composed of a set of columns that capture th
 
 In the specification, the above information will be referred to as **categories**. The above categories are captured in the prefix-based naming convention as the first item. The following is a list of prefixes that are used to capture the above:
 
--   **prediction ID** or **ID**: `:id:`
+-   **ID**: `:id:`
 -   **timestamp**: `:timestamp:`
 -   **model version**: `:version:`
 -   **features**: `:feature:`
@@ -40,6 +46,29 @@ The above prefixes are used to capture the semantic category of the column. For 
 
 The **features**, **predictions**, **actuals**, and **tags** categories will be referred to in this specification as **dimensions**.
 
+## Data Types
+
+OpenInference is designed to be transport and file format agnostic. As such, it relies on the underlying file format to define the primitive types. However not all file formats are crated equal and a super-set of data types are required to fully capture the data (For example, JSON has no concept of `float`). For this reason, we reserve the second part of the prefix for the `data_type`. The following is a list of data types that are supported by OpenInference:
+
+-   **int**: an integer
+-   **float**: a floating point number
+-   **bool**: a boolean
+-   **string**: a string
+-   **text**: a string that is a sentence or paragraph
+-   **vector**: a numeric array
+-   **iso_8601**: a string that is an ISO 8601 timestamp
+-   **milliseconds**: a numeric value that is the number of milliseconds
+-   **seconds**: a numeric value that is the number of seconds
+-   **minutes**: a numeric value that is the number of minutes
+
+## Specifiers
+
+Specifiers designate a reserved semantic meaning to the column. Specifiers are used to capture specific reserved information about the column. The following is a list of specifiers that are supported by OpenInference:
+
+-   **score**: the score of the prediction. This is a numeric value.
+-   **label**: the label of the prediction. This is a string or bool.
+-   **importance**: the importance of the feature. This is a numeric value.
+
 For full details on each of the columns, consult the sub-sections below.
 
 ## Columns
@@ -50,18 +79,3 @@ For full details on each of the columns, consult the sub-sections below.
 -   [predictions](./prediction.md)
 -   [actuals](./actual.md)
 -   [tags](./tag.md)
-
-## Data Types
-
-OpenInference is designed to be transport and file format agnostic. As such, it relies on the underlying file format to define the primitive types. However not all file formats are crated equal and a super-set of data types are required to fully capture the data (For example, JSON has no concept of `float`). For this reason, we reserve the second part of the prefix for the `data_type`. The following is a list of data types that are supported by OpenInference:
-
--   **int**: an integer
--   **float**: a floating point number
--   **bool**: a boolean
--   **string**: a string
--   **text**: a string that is a sentence or paragraph
--   **iso_timestamp**: a string that is an ISO 8601 timestamp
--   **milliseconds**: a numeric value that is the number of milliseconds
--   **seconds**: a numeric value that is the number of seconds
--   **minutes**: a numeric value that is the number of minutes
--   **emb**: an embedding - which is composed of a vector and associated data. See the [feature](./feature.md) section for more details.
