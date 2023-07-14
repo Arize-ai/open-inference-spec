@@ -2,9 +2,8 @@
 
 -   [Overview](./overview.md)
 -   Inference Record Columns
-    <!-- -   [ID](./id.md) -->
+    -   [ID](./id.md) 
     -   [Timestamp](./timestamp.md)
-    <!-- -   [Version](./version.md) -->
 -   Dimension Columns
     -   [Feature](./feature.md)
     -   [Tag](./tag.md)
