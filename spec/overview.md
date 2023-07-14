@@ -14,7 +14,7 @@ Where `category` MUST be provided. The `data_type` and `identifier` MUST be prov
 
 In the specification, `category`, `data_type`, and `identifier` will be referred to as **parts**.
 
-Between the `:`s, the **parts** are separated by a `.`. The following is an example of a column name:
+Between the `:`s, the **parts** are separated by a `.`. The following is an example of an integer column named `age`:
 
 ```
 :feature.int:age
