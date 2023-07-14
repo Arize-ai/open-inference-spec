@@ -43,8 +43,8 @@ Note that the `:feature:int:fico_score` column has a value of `null`. This is be
 If the column name is prefixed with `:feature:emb:`, then it is assumed that the column is associated with an embedding. An embedding is made up of a vector and a set of associated data. An embedding is composed of multiple columns. For this reason, a name follows the prefix parts to group the columns together (e.x. `:feature:emb:vector:prompt`) The following is an example of an embedding:
 
 -   `:feature:emb:vector:<name>`: the vector of the embedding. This is a numeric array.
--   `:feature:emb:text:<name>`: the associated text data of the embedding if the embedding represents. This is a string.
--   `:feature:emb:url:<name>`: A URL that points to the raw data of the embedding. This is a string but is a URL to a file (e.x. an image or audio file).
+-   `:feature:str:text:<name>`: the associated text data of the embedding if the embedding represents. This is a string.
+-   `:feature:str:url:<name>`: A URL that points to the raw data of the embedding. This is a string but is a URL to a file (e.x. an image or audio file).
 
 Here is an example of an embedding for a prompt:
 
@@ -52,7 +52,7 @@ Here is an example of an embedding for a prompt:
  <thead>
     <tr>
      <th>:feature:emb:vector:prompt</th>
-     <th>:feature:emb:text:prompt</th>
+     <th>:feature:str:text:prompt</th>
     </tr>
  </thead>
  <tbody>
@@ -76,7 +76,7 @@ Here is an example of an embedding for an image:
     <thead>
         <tr>
         <th>:feature:emb:vector:my_image</th>
-        <th>:feature:emb:url:my_image</th>
+        <th>:feature:str:url:my_image</th>
         </tr>
     </thead>
     <tbody>
