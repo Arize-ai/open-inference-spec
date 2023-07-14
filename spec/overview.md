@@ -29,7 +29,7 @@ A single row or inference record is composed of a set of columns that capture th
 In the specification, the above information will be referred to as **categories**. The above categories are captured in the prefix-based naming convention as the first item. The following is a list of prefixes that are used to capture the above:
 
 -   **prediction ID** or **ID**: `:id:`
--   **iso_8601**: `:timestamp:`
+-   **timestamp**: `:timestamp:`
 -   **model version**: `:version:`
 -   **features**: `:feature:`
 -   **predictions**: `:prediction:`
