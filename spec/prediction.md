@@ -15,7 +15,7 @@ Here is an example of a set of prediction columns:
  <thead>
     <tr>
      <th>:prediction.float.score:confidence</th>
-     <th>:prediction:str.label:predicted_animal</th>
+     <th>:prediction.str.label:predicted_animal</th>
     </tr>
  </thead>
  <tbody>
