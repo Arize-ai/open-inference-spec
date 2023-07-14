@@ -17,8 +17,8 @@ Here are examples of a set of timestamp columns:
 <table>
     <thead>
         <tr>
-            <th>:timestamp:iso_8601</th>
-            <th>:prediction:str:label</th>
+            <th>:timestamp.iso_8601:</th>
+            <th>:prediction:str.label:</th>
         </tr>
     </thead>
     <tbody>
