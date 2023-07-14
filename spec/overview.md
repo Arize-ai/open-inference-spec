@@ -53,7 +53,7 @@ OpenInference is designed to be transport and file format agnostic. As such, it 
 -   **int**: an integer
 -   **float**: a floating point number
 -   **bool**: a boolean
--   **string**: a string
+-   **str**: a string, typically a label that can be enumerated
 -   **text**: a string that is a sentence or paragraph
 -   **vector**: a numeric array
 -   **iso_8601**: a string that is an ISO 8601 timestamp
