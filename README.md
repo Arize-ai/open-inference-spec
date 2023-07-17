@@ -1,6 +1,6 @@
 # OpenInference
 
-The OpenInference specification is edited in markdown files found in the [spec directory](./spec/README.md)
+The OpenInference specification is edited in markdown files found in the [spec directory](./spec/README.md).
 
 ## Overview
 
