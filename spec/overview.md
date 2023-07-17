@@ -48,7 +48,7 @@ The **features**, **predictions**, **actuals**, and **tags** categories will be 
 
 ## Data Types
 
-OpenInference is designed to be transport and file-format agnostic. As such, it relies on the underlying file format to define the primitive types. However not all file formats are crated equal and a super-set of data types are required to fully capture the data (For example, JSON has no concept of `float`). For this reason, we reserve the second part of the prefix for the `data_type`. The following is a list of data types that are supported by OpenInference:
+OpenInference is designed to be transport and file-format agnostic. As such, it relies on the underlying file format to define the primitive types. However not all file formats are created equal and a superset of data types are required to fully capture the data (For example, JSON has no concept of `float`). For this reason, we reserve the second part of the prefix for the `data_type`. The following is a list of data types that are supported by OpenInference:
 
 -   **int**: an integer
 -   **float**: a floating point number
@@ -57,9 +57,9 @@ OpenInference is designed to be transport and file-format agnostic. As such, it 
 -   **text**: a string that is a sentence or paragraph
 -   **vector**: a numeric array
 -   **iso_8601**: a string that is an ISO 8601 timestamp
--   **milliseconds**: a numeric value that is the number of milliseconds
--   **seconds**: a numeric value that is the number of seconds
--   **minutes**: a numeric value that is the number of minutes
+-   **milliseconds**: an integer value that is the number of milliseconds
+-   **seconds**: an integer value that is the number of seconds
+-   **minutes**: an integer value that is the number of minutes
 
 ## Specifiers
 
