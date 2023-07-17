@@ -2,9 +2,7 @@
 
 An actual is a column that captures the ground truth or actual value of the prediction. This is used to evaluate the model's performance. Since the actual is typically not known at inference time, this is typically added to the records at a later time. Actual columns are prefixed with the category `:actual:` in the column name and typically is symmetric with the [prediction](prediction.md) columns. For example, if there is a `:prediction:float:score` column, then there can be a corresponding `:actual.float.score:` column.
 
-Similar to [predictions](./prediction.md), there a few reserved **specifiers**.
-
-predictions have a few reserved **specifiers** that can be used to capture specific reserved information about the prediction. The following is a list of specifiers that are supported by OpenInference:
+Similar to [predictions](./prediction.md), actuals have a few reserved **specifiers** that can be used to capture specific reserved information about the actual. The following is a list of specifiers that are supported by OpenInference:
 
 -   **score**: the score of the ground truth. This is a numeric value.
 -   **label**: the label of the ground truth. This is a string or bool.
