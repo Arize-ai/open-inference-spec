@@ -4,7 +4,7 @@ A feature is a column that captures the inputs to the model. Features are typica
 
 ## Single Value Features
 
-If the column name is only prefixed with the **category** `:feature:` and a **data_type** with a unique **name**, then it is assumed that the column is a single value column (e.g. a key-value pair). Here is and example of a set of feature columns:
+If the column name is only prefixed with the **category** `:feature:` and a **data_type** with a unique **name**, then it is assumed that the column is a single value column (e.g. a key-value pair). Here is an example of a set of feature columns:
 
 <table>
  <thead>
