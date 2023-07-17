@@ -40,7 +40,7 @@ Note that the `:feature.int:fico_score` column has a value of `null`. This is be
 
 ## Embedding Features
 
-If a set of columns are meant to be grouped into a "composite", they MUST have matching names. For example, if there is a column named `:feature.vector:prompt` and `feature.text:prompt`, then these two columns are meant to be grouped. It is this mechanism that can be used to associate data to a embedding vector.
+If a set of columns are meant to be grouped into a "composite", they MUST have matching names. For example, if there is a column named `:feature.vector:prompt` and `:feature.text:prompt`, then these two columns are meant to be grouped. It is this mechanism that can be used to associate data to a embedding vector.
 
 Here is an example of an embedding for a prompt:
 
