@@ -10,7 +10,7 @@ Timestamp columns are prefixed with the category `:timestamp:` in the column nam
 
 Timestamp columns MUST be singular, meaning that there is only one timestamp column per record. Timestamp columns are typically used to perform time-series analysis.
 
-There is no reserved **specifier** or **name** for timestamps.
+There are no reserved **specifiers** or **names** for timestamps.
 
 Here are examples of a set of timestamp columns:
 

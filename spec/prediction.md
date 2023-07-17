@@ -81,7 +81,7 @@ In some cases (e.g. LLMs, NLP), the prediction can be encoded as an embedding. T
     </tbody>
 </table>
 
-Embedding predictions can also be associated with a URL to the raw data of the embedding. This is a string but is a URL to a file (e.x. an image or audio file). In this case, the prediction is prefixed with `:prediction.url:`. Here is an example of a set of embedding predictions with a URL:
+Embedding predictions can also be associated with a URL to the raw data of the embedding. This is a string but is a URL to a file (e.g., an image or audio file). In this case, the prediction is prefixed with `:prediction.url:`. Here is an example of a set of embedding predictions with a URL:
 
 <table>
     <thead>
