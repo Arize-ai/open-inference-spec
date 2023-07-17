@@ -8,7 +8,7 @@ This is a a working draft of the specification for OpenInference, a specificatio
 
 OpenInference defines a set of columns that capture production inference logs that can be used on top of many file formats including Parquet, Avro, CSV, and JSON. It will also support future formats such as Lance.
 
-OpenInference data is designed to be stored in a data lake or data warehouse and to be downloaded to a local machine for analysis.
+OpenInference data is designed to be stored in a data lake or data warehouse and provides a standardized format that simplifies the analysis of inference data.
 
 ```mermaid
 flowchart TD
@@ -46,4 +46,5 @@ Computer Vision
 
 Large Language Models
 
--   Text Generation via Prompt Response
+-   Text Generation via Prompt-Response
+-   Retrieval-Augmented Generation
