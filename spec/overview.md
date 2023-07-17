@@ -42,7 +42,7 @@ In the specification, the above information will be referred to as **categories*
 -   **actuals**: `:actual:`
 -   **tags**: `:tag:`
 
-The above prefixes are used to capture the semantic category of the column. For example, a column named `:feature:int:age` would be a column that captures the age of the user and that is used as an input to the model. A column named `:prediction:float:score` would be a column that captures the score of the prediction.
+The above prefixes are used to capture the semantic category of the column. For example, a column named `:feature.int:age` would be a column that captures the age of the user and that is used as an input to the model. A column named `:prediction.float:score` would be a column that captures the score of the prediction.
 
 The **features**, **predictions**, **actuals**, and **tags** categories will be referred to in this specification as **dimensions**.
 
