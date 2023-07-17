@@ -24,9 +24,9 @@ Between the `:`s, the **parts** are separated by a `.`. The following is an exam
 
 A single row or inference record is composed of a set of columns that capture the following information:
 
--   **prediction ID** or **ID**: a unique identifier for the inference. This is typically a UUID.
--   **timestamp**: the timestamp of the inference. This is the time at which the inference was made, typically in production.
--   **model version**: the version of the model that was used to make the inference.
+-   **prediction ID** or **ID**: A unique identifier for the inference. This is typically a UUID.
+-   **timestamp**: The timestamp of the inference. This is the time at which the inference was made, typically in production.
+-   **model version**: The version of the model that was used to make the inference.
 -   **features**: The inputs to the model. This is a set of columns that contain numeric and categorical values that were used to make the inference.
 -   **predictions**: The output of the model.
 -   **actuals**: The ground truth or actual value of the prediction. This is used to evaluate the model's performance.
