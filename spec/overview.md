@@ -4,7 +4,7 @@ The OpenInference specification defines a set of columns that semantically map t
 
 # Naming Convention
 
-The column names in OpenInference encode semantics via a well-formed prefix, where aset of `:`s are used to encapsulate machine parsable information. Parsers of the OpenInference specification should use the `:` as a delimiter to extract the ontological information about the column. The anatomy of a column name is as follows:
+The column names in OpenInference encode semantics via a well-formed prefix, where aset of `:`s are used to encapsulate machine-parsable information. Parsers of the OpenInference specification should use the `:` as a delimiter to extract the ontological information about the column. The anatomy of a column name is as follows:
 
 ```
 :<category>.<data_type>.<[identifier]>:<name>
