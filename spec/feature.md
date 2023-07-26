@@ -75,22 +75,23 @@ Here is an example of an embedding for an image:
 <table>
     <thead>
         <tr>
-        <th>:feature.[float].embedding:my_image</th>
-        <th>:feature.url:my_image</th>
+            <th>:feature.[float].embedding:my_image</th>
+            <th>:feature.url:my_image</th>
         </tr>
     </thead>
     <tbody>
-    <tr>
+      <tr>
         <td>[0.1, 0.2, 0.3]</td>
         <td>https://example.com/image1.jpg</td>
-        </tr>
-        <tr>
+      </tr>
+      <tr>
         <td>[0.4, 0.5, 0.6]</td>
         <td>https://example.com/image2.jpg</td>
-        </tr>
-        <tr>
+      </tr>
+      <tr>
         <td>[0.7, 0.8, 0.9]</td>
         <td>https://example.com/image3.jpg</td>
+      </tr>
     </tbody>
 </table>
 
@@ -111,25 +112,26 @@ The data for an embedding that is used to retrieve knowledge base records would 
     </tr>
  </thead>
  <tbody>
-    <tr>
-    <td>[0.1, 0.2, 0.3]</td>
-    <td>What is the weather like today?</td>
-   <td>["doc_id_1", "doc_id_4", "doc_id_6"]</td>
-    <td>[0.2, 0.5, 0.7]</td>
-    <td>It is rainy</td>
+   <tr>
+      <td>[0.1, 0.2, 0.3]</td>
+      <td>What is the weather like today?</td>
+      <td>["doc_id_1", "doc_id_4", "doc_id_6"]</td>
+      <td>[0.2, 0.5, 0.7]</td>
+      <td>It is rainy</td>
+   </tr>
+   <tr>
+      <td>[0.4, 0.5, 0.6]</td>
+      <td>What is the weather like tomorrow?</td>
+      <td>["doc_id_1", "doc_id_3", "doc_id_6"]</td>
+      <td>[0.2, 0.4, 0.9]</td>
+      <td>It is sunny</td>
    </tr>
     <tr>
-    <td>[0.4, 0.5, 0.6]</td>
-    <td>What is the weather like tomorrow?</td>
-    <td>["doc_id_1", "doc_id_3", "doc_id_6"]</td>
-    <td>[0.2, 0.4, 0.9]</td>
-    <td>It is sunny</td>
+      <td>[0.7, 0.8, 0.9]</td>
+      <td>What is the weather like in 5 days?</td>
+      <td>["doc_id_1", "doc_id_3", "doc_id_6"]</td>
+      <td>[0.2, 0.4, 0.9]</td>
+      <td>It is cloudy</td>
     </tr>
-    <tr>
-    <td>[0.7, 0.8, 0.9]</td>
-    <td>What is the weather like in 5 days?</td>
-    <td>["doc_id_1", "doc_id_3", "doc_id_6"]</td>
-    <td>[0.2, 0.4, 0.9]</td>
-    <td>It is cloudy</td>
  </tbody>
  <table>
