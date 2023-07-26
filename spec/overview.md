@@ -71,7 +71,7 @@ OpenInference is designed to be transport and file format agnostic. As such, it 
 
 ### List Types
 
-The above data types can be used to define a list of values by wrapping the data type in `[]`s. For example, a column that captures a list of `int`s can be defined as `:feature.[id]:document_ids`.
+The above data types can be used to define a list of values by wrapping the data type in `[]`s. For example, a column that captures a list of `id`s can be defined as `:feature.[id]:document_ids`.
 
 ## Specifiers
 
