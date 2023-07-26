@@ -4,8 +4,8 @@ An actual is a column that captures the ground truth or actual value of the pred
 
 Similar to [predictions](./prediction.md), actuals have a few reserved **specifiers** that can be used to capture specific reserved information about the actual. The following is a list of specifiers that are supported by OpenInference:
 
--   **score**: the score of the ground truth. This is a numeric value.
--   **label**: the label of the ground truth. This is a string or bool.
+- **score**: the score of the ground truth. This is a numeric value.
+- **label**: the label of the ground truth. This is a string or bool.
 
 Here is an example of a set of actual columns:
 

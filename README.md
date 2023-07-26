@@ -25,26 +25,26 @@ OpenInference is designed to capture records for a variety of model types and us
 
 Natural Language Processing
 
--   Text Classification
--   NER Span Categorization
+- Text Classification
+- NER Span Categorization
 
 Tabular
 
--   Regression
--   Classification
--   Classification + Score
--   Multi-Classification
--   Ranking
--   Multi-Output/Label
--   Time Series Forecasting
+- Regression
+- Classification
+- Classification + Score
+- Multi-Classification
+- Ranking
+- Multi-Output/Label
+- Time Series Forecasting
 
 Computer Vision
 
--   Classification
--   Bounding Box
--   Segmentation
+- Classification
+- Bounding Box
+- Segmentation
 
 Large Language Models
 
--   Text Generation via Prompt-Response
--   Retrieval-Augmented Generation
+-  Text Generation via Prompt-Response
+-  Retrieval-Augmented Generation

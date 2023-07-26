@@ -1,14 +1,14 @@
 # OpenInference Specification
 
--   [Overview](./overview.md)
--   Inference Record Columns
-    -   [ID](./id.md) 
-    -   [Timestamp](./timestamp.md)
--   Dimension Columns
-    -   [Feature](./feature.md)
-    -   [Tag](./tag.md)
-    -   [Prediction](./prediction.md)
-    -   [Actual](./actual.md)
+- [Overview](./overview.md)
+- Inference Record Columns
+  - [ID](./id.md)
+  - [Timestamp](./timestamp.md)
+- Dimension Columns
+  - [Feature](./feature.md)
+  - [Tag](./tag.md)
+  - [Prediction](./prediction.md)
+  - [Actual](./actual.md)
 
 ## Notation Conventions and Compliance
 
@@ -35,5 +35,5 @@ name is optional.
 
 ## Project Naming
 
--   The official project name is "OpenInference" (with no space between "Open" and
-    "Inference").
+- The official project name is "OpenInference" (with no space between "Open" and
+  "Inference").
