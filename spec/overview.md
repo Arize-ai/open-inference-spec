@@ -4,7 +4,7 @@ The OpenInference specification defines a set of columns that semantically map t
 
 # Naming Convention
 
-The column names in OpenInference encode semantics via a well-formed prefix, where aset of `:`s are used to encapsulate machine parsable information. Parsers of the OpenInference specification should use the `:` as a delimiter to extract the ontological information about the column. The anatomy of a column name is as follows:
+The column names in OpenInference encode semantics via a well-formed prefix, where a set of `:`s are used to encapsulate machine-parsable information. Parsers of the OpenInference specification should use the `:` as a delimiter to extract the ontological information about the column. The anatomy of a column name is as follows:
 
 ```
 :<category>.<data_type>.<[identifier]>:<name>
@@ -42,13 +42,13 @@ In the specification, the above information will be referred to as **categories*
 - **actuals**: `:actual:`
 - **tags**: `:tag:`
 
-The above prefixes are used to capture the semantic category of the column. For example, a column named `:feature:int:age` would be a column that captures the age of the user and that is used as an input to the model. A column named `:prediction:float:score` would be a column that captures the score of the prediction.
+The above prefixes are used to capture the semantic category of the column. For example, a column named `:feature.int:age` would be a column that captures the age of the user and that is used as an input to the model. A column named `:prediction.float.score:` would be a column that captures the score of the prediction.
 
 The **features**, **predictions**, **actuals**, and **tags** categories will be referred to in this specification as **dimensions**.
 
 ## Data Types
 
-OpenInference is designed to be transport and file format agnostic. As such, it relies on the underlying file format to define the primitive types. However not all file formats are crated equal and a super-set of data types are required to fully capture the data (For example, JSON has no concept of `float`). For this reason, we reserve the second part of the prefix for the `data_type`. The following is a list of data types that are supported by OpenInference:
+OpenInference is designed to be transport and file format agnostic. As such, it relies on the underlying file format to define the primitive types. However not all file formats are created equal and a superset of data types are required to fully capture the data (For example, JSON has no concept of `float`). For this reason, we reserve the second part of the prefix for the `data_type`. The following is a list of data types that are supported by OpenInference:
 
 - primitive data types
 
