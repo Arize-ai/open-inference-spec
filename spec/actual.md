@@ -6,8 +6,8 @@ Similar to [predictions](./prediction.md), there a few reserved **specifiers**.
 
 predictions have a few reserved **specifiers** that can be used to capture specific reserved information about the prediction. The following is a list of specifiers that are supported by OpenInference:
 
--   **score**: the score of the ground truth. This is a numeric value.
--   **label**: the label of the ground truth. This is a string or bool.
+- **score**: the score of the ground truth. This is a numeric value.
+- **label**: the label of the ground truth. This is a string or bool.
 
 Here is an example of a set of actual columns:
 

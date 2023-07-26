@@ -4,9 +4,9 @@ A timestamp is a column that captures the time at which the inference was made. 
 
 Timestamp columns are prefixed with the category `:timestamp:` in the column name. Timestamps are represented as the following data types:
 
--   **iso_8601**: a string that is an ISO 8601 timestamp
--   **milliseconds**: a numeric value that is the Epoch time in milliseconds
--   **seconds**: a numeric value that is the Epoch time in seconds
+- **iso_8601**: a string that is an ISO 8601 timestamp
+- **milliseconds**: a numeric value that is the Epoch time in milliseconds
+- **seconds**: a numeric value that is the Epoch time in seconds
 
 Timestamp columns MUST be singular, meaning that there is only one timestamp column per record. Timestamp columns are typically used to perform time-series analysis.
 

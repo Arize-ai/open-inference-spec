@@ -6,8 +6,8 @@ A prediction is a column that captures the output of the model. Predictions are 
 
 predictions have a few reserved **specifiers** that can be used to capture specific reserved information about the prediction. The following is a list of specifiers that are supported by OpenInference:
 
--   **score**: the score of the prediction. This is a numeric value.
--   **label**: the label of the prediction. This is a string or bool.
+- **score**: the score of the prediction. This is a numeric value.
+- **label**: the label of the prediction. This is a string or bool.
 
 Here is an example of a set of prediction columns:
 

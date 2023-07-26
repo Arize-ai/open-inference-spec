@@ -62,20 +62,20 @@ reproduce, prepare derivative works of, publicly display, publicly
 perform, and distribute the Submission and such derivative works, and to
 sublicense any or all of the foregoing rights to third parties.
 
-b.  **Patent License.** You grant Arize, and those who receive the
-    Submission directly or indirectly from Arize, a perpetual,
-    worldwide, non-exclusive, royalty-free, irrevocable license under
-    Your patent claims that are necessarily infringed by the Submission
-    or the combination of the Submission with the Project to which it
-    was Submitted to make, have made, use, offer to sell, sell and
-    import or otherwise dispose of the Submission alone or with the
-    Project.
+b. **Patent License.** You grant Arize, and those who receive the
+Submission directly or indirectly from Arize, a perpetual,
+worldwide, non-exclusive, royalty-free, irrevocable license under
+Your patent claims that are necessarily infringed by the Submission
+or the combination of the Submission with the Project to which it
+was Submitted to make, have made, use, offer to sell, sell and
+import or otherwise dispose of the Submission alone or with the
+Project.
 
-c.  **Other Rights Reserved.** Each party reserves all rights not
-    expressly granted in this Agreement. No additional licenses or
-    rights whatsoever (including, without limitation, any implied
-    licenses) are granted by implication, exhaustion, estoppel or
-    otherwise.
+c. **Other Rights Reserved.** Each party reserves all rights not
+expressly granted in this Agreement. No additional licenses or
+rights whatsoever (including, without limitation, any implied
+licenses) are granted by implication, exhaustion, estoppel or
+otherwise.
 
 **6. Representations and Warranties.** You represent that You are
 legally entitled to grant the above licenses. You represent that each of
