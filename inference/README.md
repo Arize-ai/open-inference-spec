@@ -8,43 +8,32 @@ This is a a working draft of the specification for OpenInference, a specificatio
 
 OpenInference defines a set of columns that capture production inference logs that can be used on top of many file formats including Parquet, Avro, CSV, and JSON. It will also support future formats such as Lance.
 
-OpenInference data is designed to be stored in a data lake or data warehouse and provides a standardized format that simplifies the analysis of inference data.
-
-```mermaid
-flowchart TD
-    A[ML Infra] -->|OpenInference| B[Inference Store]
-    A -->|OpenInference| C[File System]
-    E[Browser] --> |OpenInference| B[Inference Store]
-    C -->|Import| B
-    B -->|Export| D[Notebook]
-```
-
 ## Model Types / Use-Cases
 
 OpenInference is designed to capture records for a variety of model types and use-cases. The following is a list of model types and use-cases that OpenInference is designed to capture.
 
 Natural Language Processing
 
-- Text Classification
-- NER Span Categorization
+-   Text Classification
+-   NER Span Categorization
 
 Tabular
 
-- Regression
-- Classification
-- Classification + Score
-- Multi-Classification
-- Ranking
-- Multi-Output/Label
-- Time Series Forecasting
+-   Regression
+-   Classification
+-   Classification + Score
+-   Multi-Classification
+-   Ranking
+-   Multi-Output/Label
+-   Time Series Forecasting
 
 Computer Vision
 
-- Classification
-- Bounding Box
-- Segmentation
+-   Classification
+-   Bounding Box
+-   Segmentation
 
 Large Language Models
 
--  Text Generation via Prompt-Response
--  Retrieval-Augmented Generation
+-   Text Generation via Prompt-Response
+-   Retrieval-Augmented Generation
