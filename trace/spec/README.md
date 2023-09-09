@@ -1,14 +1,7 @@
-# OpenInference Specification
+# OpenInference Tracing Specification
 
-- [Overview](./overview.md)
-- Inference Record Columns
-  - [ID](./id.md)
-  - [Timestamp](./timestamp.md)
-- Dimension Columns
-  - [Feature](./feature.md)
-  - [Tag](./tag.md)
-  - [Prediction](./prediction.md)
-  - [Actual](./actual.md)
+-   [Traces](./traces.md)
+-   [Semantic Conventions](./semantic_conventions.md)
 
 ## Notation Conventions and Compliance
 
@@ -27,13 +20,7 @@ implementation of the specification is compliant if it satisfies all the
 "MUST", "MUST NOT", "REQUIRED", "SHALL", and "SHALL NOT" requirements defined in
 the specification.
 
-The specification uses a set of conventions to describe the structure of
-strings. Terms surrounded by `<` and `>` are placeholders for the actual value.
-For example, `<name>` is a placeholder for the actual name of the column. Terms
-surrounded by `[` and `]` are optional. For example, `<[name]>` means that the
-name is optional.
-
 ## Project Naming
 
-- The official project name is "OpenInference" (with no space between "Open" and
-  "Inference").
+-   The official project name is "OpenInference Tracing" (with no space between "Open" and
+    "Inference").
