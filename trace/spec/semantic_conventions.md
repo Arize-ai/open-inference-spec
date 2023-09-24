@@ -16,7 +16,7 @@ The following attributes are reserved and MUST be supported by all OpenInference
 | `output.mime_type`                     | String          | `"text/plain"`                                                             | MIME type representing the format of `output.value`              |
 | `input.value`                          | String          | `{"query": "What is the weather today?"}`                                  | The input value to an operation                                  |
 | `input.mime_type`                      | String          | `"application/json"`                                                       | MIME type representing the format of `input.value`               |
-| `embedding.embeddings`                 | List of objects | `[{vector: [...], text: "hello"}]`                                         | List of embedding objects including text and vector data         |
+| `embedding.embeddings`                 | List of objects | `[{"embeeding.vector": [...], "embedding.text": "hello"}]`                 | List of embedding objects including text and vector data         |
 | `embedding.model_name`                 | String          | `"BERT-base"`                                                              | Name of the embedding model used                                 |
 | `embedding.text`                       | String          | `"hello world"`                                                            | The text represented in the embedding                            |
 | `embedding.vector`                     | List of floats  | `[0.123, 0.456, ...]`                                                      | The embedding vector consisting of a list of floats              |
