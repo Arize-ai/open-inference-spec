@@ -22,7 +22,8 @@ The following attributes are reserved and MUST be supported by all OpenInference
 | `embedding.vector`                     | List of floats  | `[0.123, 0.456, ...]`                                                      | The embedding vector consisting of a list of floats              |
 | `llm.function_call`                    | String          | `{function_name: "add", args: [1, 2]}`                                     | Object recording details of a function call in models or APIs    |
 | `llm.invocation_parameters`            | JSON string     | `{model_name: "gpt-3", temperature: 0.7}`                                  | Parameters used during the invocation of an LLM or API           |
-| `llm.messages`                         | List of objects | `[{"message.role": "user", "message.content": "hello"}]`                   | List of messages exchanged in a chat API                         |
+| `llm.input_messages`                   | List of objects | `[{"message.role": "user", "message.content": "hello"}]`                   | List of messages sent to the LLM in a chat API request           |
+| `llm.output_messages`                  | List of objects | `[{"message.role": "user", "message.content": "hello"}]`                   | List of messages received from the LLM in a chat API request     |
 | `message.role`                         | String          | `"user"` or `"system"`                                                     | Role of the entity in a message (e.g., user, system)             |
 | `message.function_call_name`           | String          | `"multiply"` or `"subtract"`                                               | Function call function name                                      |
 | `message.function_call_arguments_json` | String          | `"{ 'x': 2 }"`                                                             | The arguments to the function call in JSON                       |
