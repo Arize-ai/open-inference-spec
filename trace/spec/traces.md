@@ -47,7 +47,7 @@ LLM span:
     "status_code": "OK",
     "status_message": "",
     "attributes": {
-        "llm.messages": [
+        "llm.input_messages": [
             {
                 "message.role": "system",
                 "message.content": "You are an expert Q&A system that is trusted around the world.\nAlways answer the query using the provided context information, and not prior knowledge.\nSome rules to follow:\n1. Never directly reference the given context in your answer.\n2. Avoid statements like 'Based on the context, ...' or 'The context information ...' or anything along those lines."
