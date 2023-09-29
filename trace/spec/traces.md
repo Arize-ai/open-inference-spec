@@ -61,7 +61,6 @@ LLM span:
         "output.mime_type": "text/plain"
     },
     "events": [],
-    "conversation": null
 }
 ```
 
