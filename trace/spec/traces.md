@@ -161,7 +161,7 @@ A status will be attached to a span. Typically, you will set a span status when 
 
 ### Span Kind
 
-When a span is created, it is one of Chain, Retriever, LLM, Embedding, or Tool. This span kind provides a hint to the tracing backend as to how the trace should be assembled.
+When a span is created, it is one of Chain, Retriever, LLM, Embedding, Agent, or Tool. This span kind provides a hint to the tracing backend as to how the trace should be assembled.
 
 #### Chain
 
