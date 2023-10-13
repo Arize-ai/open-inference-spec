@@ -13,20 +13,20 @@ The following attributes are reserved and MUST be supported by all OpenInference
 | `exception.escaped`                    | Boolean         | `true`                                                                     | Indicator if the exception has escaped the span's scope          |
 | `exception.stacktrace`                 | String          | `"at app.main(app.java:16)"`                                               | The stack trace of the exception                                 |
 | `output.value`                         | String          | `"Hello, World!"`                                                          | The output value of an operation                                 |
-| `output.mime_type`                     | String          | `"text/plain"`                                                             | MIME type representing the format of `output.value`              |
-| `input.value`                          | String          | `{"query": "What is the weather today?"}`                                  | The input value to an operation                                  |
-| `input.mime_type`                      | String          | `"application/json"`                                                       | MIME type representing the format of `input.value`               |
+| `output.mime_type`                     | String          | `"text/plain"` or `"application/json"`                                     | MIME type representing the format of `output.value`              |
+| `input.value`                          | String          | `"{'query': 'What is the weather today?'}"`                                | The input value to an operation                                  |
+| `input.mime_type`                      | String          | `"text/plain"` or `"application/json"`                                     | MIME type representing the format of `input.value`               |
 | `embedding.embeddings`                 | List of objects | `[{"embeeding.vector": [...], "embedding.text": "hello"}]`                 | List of embedding objects including text and vector data         |
 | `embedding.model_name`                 | String          | `"BERT-base"`                                                              | Name of the embedding model used                                 |
 | `embedding.text`                       | String          | `"hello world"`                                                            | The text represented in the embedding                            |
 | `embedding.vector`                     | List of floats  | `[0.123, 0.456, ...]`                                                      | The embedding vector consisting of a list of floats              |
-| `llm.function_call`                    | String          | `{function_name: "add", args: [1, 2]}`                                     | Object recording details of a function call in models or APIs    |
-| `llm.invocation_parameters`            | JSON string     | `{model_name: "gpt-3", temperature: 0.7}`                                  | Parameters used during the invocation of an LLM or API           |
+| `llm.function_call`                    | JSON String     | `"{function_name: 'add', args: [1, 2]}"`                                   | Object recording details of a function call in models or APIs    |
+| `llm.invocation_parameters`            | JSON string     | `"{model_name: 'gpt-3', temperature: 0.7}"`                                | Parameters used during the invocation of an LLM or API           |
 | `llm.input_messages`                   | List of objects | `[{"message.role": "user", "message.content": "hello"}]`                   | List of messages sent to the LLM in a chat API request           |
 | `llm.output_messages`                  | List of objects | `[{"message.role": "user", "message.content": "hello"}]`                   | List of messages received from the LLM in a chat API request     |
 | `message.role`                         | String          | `"user"` or `"system"`                                                     | Role of the entity in a message (e.g., user, system)             |
 | `message.function_call_name`           | String          | `"multiply"` or `"subtract"`                                               | Function call function name                                      |
-| `message.function_call_arguments_json` | String          | `"{ 'x': 2 }"`                                                             | The arguments to the function call in JSON                       |
+| `message.function_call_arguments_json` | JSON String     | `"{ 'x': 2 }"`                                                             | The arguments to the function call in JSON                       |
 | `message.content`                      | String          | `"What's the weather today?"`                                              | The content of a message in a chat                               |
 | `llm.model_name`                       | String          | `"gpt-3.5-turbo"`                                                          | The name of the language model being utilized                    |
 | `llm.prompt_template.template`         | String          | `"Weather forecast for {city} on {date}"`                                  | Template used to generate prompts as Python f-strings            |
@@ -42,4 +42,11 @@ The following attributes are reserved and MUST be supported by all OpenInference
 | `document.id`                          | String/Integer  | `"1234"` or `1`                                                            | Unique identifier for a document                                 |
 | `document.score`                       | Float           | `0.98`                                                                     | Score representing the relevance of a document                   |
 | `document.content`                     | String          | `"This is a sample document content."`                                     | The content of a retrieved document                              |
-| `document.metadata`                    | JSON string     | `'{"author": "John Doe", "date": "2023-09-09"}'`                           | Metadata associated with a document represented as a JSON string |
+| `document.metadata`                    | Object          | `{"author": "John Doe", "date": "2023-09-09"}`                             | Metadata associated with a document                              |
+| `reranker.input_documents`             | List of objects | `[{"document.id": "1", "document.score": 0.9, "document.content": "..."}]` | List of documents as input to the reranker                       |
+| `reranker.output_documents`            | List of objects | `[{"document.id": "1", "document.score": 0.9, "document.content": "..."}]` | List of documents outputted by the reranker                      |
+| `reranker.query`                       | String          | `"How to format timestamp?"`                                               | Query parameter of the reranker                                  |
+| `reranker.model_name`                       | String          | `"cross-encoder/ms-marco-MiniLM-L-12-v2"`                                  | Model name of the reranker                                       |
+| `reranker.top_k`                       | Integer         | 3                                                                          | Top K parameter of the reranker                                  |
+
+Note: the `object` type refers to a set of key-value pairs also known as a `struct`, `mapping`, `dictionary`, etc. 
