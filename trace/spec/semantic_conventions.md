@@ -47,6 +47,6 @@ The following attributes are reserved and MUST be supported by all OpenInference
 | `reranker.output_documents`            | List of objects | `[{"document.id": "1", "document.score": 0.9, "document.content": "..."}]` | List of documents outputted by the reranker                      |
 | `reranker.query`                       | String          | `"How to format timestamp?"`                                               | Query parameter of the reranker                                  |
 | `reranker.query`                       | String          | `"cross-encoder/ms-marco-MiniLM-L-12-v2"`                                  | Model name of the reranker                                       |
-| `reranker.top_k`                       | Float           | 3                                                                          | Top K parameter of the reranker                                  |
+| `reranker.top_k`                       | Integer         | 3                                                                          | Top K parameter of the reranker                                  |
 
 Note: an `object` type is a set of key-value pairs also known as a `Struct`, `Mapping`, `Dictionary`, etc. 
