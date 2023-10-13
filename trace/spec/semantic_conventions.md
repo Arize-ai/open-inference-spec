@@ -43,5 +43,10 @@ The following attributes are reserved and MUST be supported by all OpenInference
 | `document.score`                       | Float           | `0.98`                                                                     | Score representing the relevance of a document                   |
 | `document.content`                     | String          | `"This is a sample document content."`                                     | The content of a retrieved document                              |
 | `document.metadata`                    | Object          | `{"author": "John Doe", "date": "2023-09-09"}`                             | Metadata associated with a document                              |
+| `reranker.input_documents`             | List of objects | `[{"document.id": "1", "document.score": 0.9, "document.content": "..."}]` | List of documents as input to the reranker                       |
+| `reranker.output_documents`            | List of objects | `[{"document.id": "1", "document.score": 0.9, "document.content": "..."}]` | List of documents outputted by the reranker                      |
+| `reranker.query`                       | String          | `"How to format timestamp?"`                                               | Query parameter of the reranker                                  |
+| `reranker.query`                       | String          | `"cross-encoder/ms-marco-MiniLM-L-12-v2"`                                  | Model name of the reranker                                       |
+| `reranker.top_k`                       | Float           | 3                                                                          | Top K parameter of the reranker                                  |
 
 Note: an `object` type is a set of key-value pairs also known as a `Struct`, `Mapping`, `Dictionary`, etc. 
