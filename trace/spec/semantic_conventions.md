@@ -49,4 +49,4 @@ The following attributes are reserved and MUST be supported by all OpenInference
 | `reranker.query`                       | String          | `"cross-encoder/ms-marco-MiniLM-L-12-v2"`                                  | Model name of the reranker                                       |
 | `reranker.top_k`                       | Integer         | 3                                                                          | Top K parameter of the reranker                                  |
 
-Note: the `object` type refers to a set of key-value pairs also known as a `Struct`, `Mapping`, `Dictionary`, etc. 
+Note: the `object` type refers to a set of key-value pairs also known as a `struct`, `mapping`, `dictionary`, etc. 
