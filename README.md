@@ -1,9 +1,13 @@
 # OpenInference
 
+> [!IMPORTANT]
+> OpenInference Tracing is now being actively worked on via: [OpenInference](https://github.com/Arize-ai/openinference)
+> This repository is maintained for historical purposes only.
+
 This is a a working draft of the specification for OpenInference - a specification that encompass two data models:
 
 -   [Inferences](./inference/README.md)
--   [Traces](./trace/README.md)
+-   [Traces](https://github.com/Arize-ai/openinference/tree/main/spec)
 
 Inferences are designed to capture inference logs from a variety of model types and use-cases where as traces are designed to capture the execution of an application that results in invocations of an LLM.
 
